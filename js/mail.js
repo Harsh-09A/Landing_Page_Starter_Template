@@ -1,6 +1,7 @@
 (function () {
   emailjs.init({
-    publicKey: "BnRoAjGd5ec2E2VQn",
+    // publicKey: "to9PlFrMMimgruuH0", //DIGIN
+    publicKey: "BwX8mmKlFidsWvP67", //HARSH
   });
 })();
 
@@ -56,7 +57,7 @@ const handleFormSubmit = async (
 window.onload = function () {
   document
     .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
+    ?.addEventListener("submit", function (event) {
       event.preventDefault();
       handleFormSubmit(
         "contact-form",
@@ -69,7 +70,7 @@ window.onload = function () {
 
   document
     .getElementById("contact-form-modal")
-    .addEventListener("submit", function (event) {
+    ?.addEventListener("submit", function (event) {
       event.preventDefault();
       handleFormSubmit(
         "contact-form-modal",
